@@ -10,5 +10,5 @@ RUN mkdir /apps
 
 ENV RUNTIME_OPTS "-Dcom.metaphacts.config.baselocation=/config -DruntimeDirectory=/ -Dconfig.environment.appsDirectory=/apps -Dorg.eclipse.jetty.server.Request.maxFormContentSize=104857600"
 
-COPY entrypoint.bash /
-ENTRYPOINT ["/entrypoint.bash"]
+COPY entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
